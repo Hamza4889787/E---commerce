@@ -1,0 +1,30 @@
+/* Style for the slider */
+.product-slider-container {
+  overflow: hidden;
+  width: 100%; /* Ensure the container is not wider than the viewport */
+}
+
+.product-slider {
+  display: flex;
+  transition: transform 0.3s ease; /* Smooth transition for horizontal sliding */
+}
+
+.product-item {
+  flex: 0 0 25%; /* Each item will take up 25% of the width, so 4 items will be shown */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Optional: Fix height for consistency and avoid stretching */
+.product-item .card {
+  height: 300px; /* Fixed height to prevent stretching */
+}
+
+/* Buttons to align nicely */
+.d-flex {
+  justify-content: center;
+}
+
+button:disabled {
+  opacity: 0.5;
+}

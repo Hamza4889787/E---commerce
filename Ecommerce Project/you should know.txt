@@ -1,0 +1,36 @@
+Payload : The data associated with that action, which is used to modify the state.
+End point: an endpoint is a specific URL where a resource or service is located on a server, and it’s what a client (like a browser or app) interacts with to send or retrieve data.
+End point components : Base Url, Path, HTTP Methods  
+Base URL: The main part of the server address, like https://api.example.com.
+Path: Specifies the exact resource or service, such as /users or /products.
+HTTP Method: Defines the type of action performed, like GET (to retrieve), POST (to create), PUT (to update), or DELETE (to remove).
+Action Type: A string that describes the kind of state update to perform.
+
+                                  <!------------------->
+
+Using an Inline Arrow Function (onClick={() => setNewImage(img)}):
+
+The inline arrow function ensures that the setNewImage(img) function only runs when the onClick event is triggered.
+This approach is often used to pass parameters to the function (img in this case) without immediately invoking it.
+It avoids the function being executed during rendering, which helps with performance and prevents unintended side effects.
+Using a Separate Function (updateImage(img)) in onClick={updateImage(img)}:
+
+Writing it directly as onClick={updateImage(img)} will immediately call updateImage(img) during the component’s rendering, not when the button is clicked. This results in the function running every time the component renders, which can lead to unexpected behavior.
+To use a separate function safely, you can wrap it in an arrow function like onClick={() => updateImage(img)}, which then only calls updateImage(img) when clicked, similar to the inline approach above.
+Summary: The inline arrow function is usually preferred for event handlers when parameters are involved, as it prevents immediate invocation and ensures the function runs only on the event itself.
+                         
+                                 <!------------------->
+
+In React, && is often used as a shorthand for conditional rendering, leveraging JavaScript's "logical AND" operator. Here’s how it works and why it’s commonly used:
+
+Explanation of && in JavaScript
+The && (logical AND) operator evaluates two expressions:
+
+If the first expression is true (or truthy), it returns the second expression.
+If the first expression is false (or falsy), it returns the first expression without evaluating the second.
+
+                             <!--------------------->
+map() creates a new array from calling a function for every array element.
+map() does not execute the function for empty elements.
+map() does not change the original array.
+

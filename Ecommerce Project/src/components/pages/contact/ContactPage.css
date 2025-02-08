@@ -1,0 +1,48 @@
+.contact-page {
+  padding: 50px 0;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+.contact-page.dark {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+}
+
+.contact-page h1,
+.contact-page h2 {
+  color: inherit;
+}
+
+.contact-page .form-control {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.contact-page .form-control:focus {
+  border-color: #bf4f74;
+  box-shadow: 0 0 5px rgba(191, 79, 116, 0.5);
+}
+
+.contact-page .btn-primary {
+  background-color: #bf4f74;
+  border: none;
+}
+
+.contact-page .btn-primary:hover {
+  background-color: #a43d60;
+}
+
+.map {
+  height: 400px; /* Set map height */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 20px 0;
+  }
+}
